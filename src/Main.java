@@ -1,8 +1,6 @@
 import Guide.Author;
 import Guide.Book;
 
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         Author author1 = new Author("Эрих", "Фромм");
@@ -12,7 +10,8 @@ public class Main {
         book1.setYearOfPublication(1895);
         book2.setYearOfPublication(1968);
 
-        System.out.println(book1.getName() + ", " + author1.getFirstName() + " " + author1.getSecondName() + ", " + book1.getYearOfPublication());
-        System.out.println(book2.getName() + ", " + author2.getFirstName() + " " + author2.getSecondName() + ", " + book2.getYearOfPublication());
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(author1.equals(author2));
     }
 }
